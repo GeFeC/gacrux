@@ -7,6 +7,16 @@
 
 #include <glm/glm.hpp>
 
+#define GACRUX_CREATE_PROP(NAME, PROP_TYPE, PROP_NAME) struct NAME{ \
+  PROP_TYPE PROP_NAME; \
+  NAME() = default; \
+  NAME(PROP_TYPE PROP_NAME) : PROP_NAME(PROP_NAME) {} \
+  template<typename T> \
+  auto set_to(T& item) const{ \
+    item.PROP_NAME = PROP_NAME; \
+  } \
+};
+
 namespace gx::prop{
   struct Position{ 
     gx::Vec2 position;

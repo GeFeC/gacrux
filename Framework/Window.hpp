@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Util/Math.hpp"
 #include "Renderer/Renderer.hpp"
 #include "Renderer/ShaderProgram.hpp"
@@ -32,8 +34,8 @@ auto update_frame_buffer(const Vec2& size){
   glViewport(0, 0, size.x, size.y);
 }
 
-template<typename Model, typename Controller, typename Function>
-auto make_app(const std::string& title, const Vec2& initial_size, View<Model, Controller, Function>& initial_view){
+template<typename Controller, typename Function>
+auto make_app(const std::string& title, const Vec2& initial_size, View<Controller, Function>& initial_view){
   if (!glfwInit()){
     throw "GLFW error!\n";
   }

@@ -7,8 +7,8 @@ namespace gx::view_manager{
 
   auto run(GLFWwindow* window) -> void;
 
-  template<typename Model, typename Controller, typename Function>
-  inline auto switch_to(View<Model, Controller, Function>& view){
+  template<typename Controller, typename Function>
+  inline auto switch_to(View<Controller, Function>& view){
     current_view->disabled = true;
     view.disabled = false;
     current_view = &view;

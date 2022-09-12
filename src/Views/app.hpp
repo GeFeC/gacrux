@@ -8,19 +8,17 @@
 #include "Components/orbit.hpp"
 #include "Models/app.hpp"
 #include "Controllers/app.hpp"
-#include "Props/orbit.hpp"
 
 auto app_fonts = gx::FontList{
   std::make_pair(&gx::fonts::consolas, 70)
 };
 
-auto app = gx::make_view<AppModel, AppController>([](const auto& model){
+auto app = gx::make_view<AppController>([]{
   gx::component(gx::Size(800, 600), gx::Color(0.1, 0.05, 0, 1));
 
   for (int i = 0; i < 360; i += 120){
     orbit(
-      gx::Rotation(model.orbit_rotation + i), 
-      ParticleRotation(model.particle_rotation)
+      gx::Rotation(AppModel::orbit_rotation + i)
     );
   }
 

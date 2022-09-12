@@ -1,12 +1,12 @@
 #pragma once
 
-#include "res/fonts.hpp"
+#include "Models/app.hpp"
 
 struct AppController{
-  static inline auto setup = [](auto& model){};
+  static auto setup(){};
 
-  static inline auto loop = [](auto& model){
-    model.orbit_rotation -= gx::delta_time * 45;
-    model.particle_rotation -= gx::delta_time * 140;
+  static auto loop(){
+    AppModel::orbit_rotation -= gx::delta_time * 45;
+    AppModel::particle_rotation -= gx::delta_time * 140;
   };
 };

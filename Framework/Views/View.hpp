@@ -17,7 +17,7 @@ namespace gx{
 
   using FontList = std::vector<std::pair<Font*, i32>>;
 
-  template<typename Model, typename Controller, typename Function>
+  template<typename Controller, typename Function>
   struct View : ViewBase{
     Function render;
     FontList fonts;
@@ -25,21 +25,19 @@ namespace gx{
     View(Function render, FontList fonts = FontList()) : render(render), fonts(fonts) {}
 
     auto operator()(GLFWwindow* window) const -> void override{
-      Model model;
-
       for (auto& [font, size] : fonts){
         font->allocate(size);
       }
 
-      Controller::setup(model);
+      Controller::setup();
 
       while(!disabled && !glfwWindowShouldClose(window)){
         const auto start_time = glfwGetTime();
         glClear(GL_COLOR_BUFFER_BIT);
         glClearColor(0.f, 0.f, 0.f, 0.f);
 
-        Controller::loop(model);
-        render(model);
+        Controller::loop();
+        render();
 
         glfwPollEvents();
         glfwSwapBuffers(window);
@@ -53,19 +51,13 @@ namespace gx{
     }
   };
 
-  template<typename Model, typename Controller, typename Function>
-  auto make_view(Function render, FontList fonts = FontList()){
-    return View<Model, Controller, Function>(render, fonts);
-  }
-
-  struct DummyModel{};
   struct DummyController{ 
-    static auto setup(DummyModel) {}
-    static auto loop(DummyModel) {}
+    static auto setup() {}
+    static auto loop() {}
   };
 
-  template<typename Function>
+  template<typename Controller = DummyController, typename Function>
   auto make_view(Function render, FontList fonts = FontList()){
-    return View<DummyModel, DummyController, Function>(render, fonts);
+    return View<Controller, Function>(render, fonts);
   }
 }
