@@ -34,6 +34,27 @@ namespace gx::prop{
     }
   };
 
+  struct Center{
+    gx::Vec2 position;
+    gx::Vec2 parent_pos, parent_size;
+
+    Center() = default;
+    Center(gx::Vec2 parent_pos, gx::Vec2 parent_size) : parent_pos(parent_pos), parent_size(parent_size) {}
+
+    template<typename T>
+    auto set_to(T& item) const{
+      item.position = parent_pos 
+      + Vec2(parent_size.x / 2, parent_size.y / 2)
+      - Vec2(item.size.x / 2, item.size.y / 2);
+    }
+
+    auto set_to(Text& text) const{
+      text.set_position(parent_pos 
+      + Vec2(parent_size.x / 2, parent_size.y / 2)
+      - Vec2(text.get_size().x / 2, text.get_size().y / 2));
+    }
+  };
+
   struct Size{ 
     gx::Vec2 size;
 
@@ -118,6 +139,10 @@ namespace gx::prop{
     template<typename T>
     auto set_to(T& item) const{
       item.label = label;
+    }
+
+    auto set_to(Text& text) const{
+      text.set_text(label);
     }
   };
 

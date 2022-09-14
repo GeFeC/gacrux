@@ -46,12 +46,8 @@ namespace gx{
   }
 
   template<typename... Props>
-  auto text(const std::string& label, const Props&... props){
-    Text text;
-    gx::set_props(text, props...);
-    text.set_text(label);
-
-    gx::renderer::draw(text);
+  auto text(const Props&... props){
+    render_component<Text>(props...);
   }
 }
 

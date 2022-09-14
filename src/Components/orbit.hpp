@@ -1,5 +1,10 @@
 #pragma once
 
+#include <../Framework/Components/Props.hpp>
+#include <../Framework/Components/Components.hpp>
+#include <../Framework/Components/CustomComponents.hpp>
+#include <../Framework/Views/View.hpp>
+
 #include "Models/app.hpp"
 
 const auto orbit = gx::make_component([](const auto& props){
@@ -7,7 +12,7 @@ const auto orbit = gx::make_component([](const auto& props){
     gx::transformable(
       gx::Model(
         gx::Mat4()
-        .translate(gx::Vec2(400, 250))
+        .translate(gx::Vec2(props.position.x + 400, props.position.y + 250))
         .rotate(props.rotation)
         .translate(gx::Vec2(0, -80))
         .scale(gx::Vec2(1, 1.6))

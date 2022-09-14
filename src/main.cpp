@@ -1,7 +1,7 @@
-#include "../Framework/Window.hpp"
-#include "../Framework/Components/Components.hpp"
-#include "res/fonts.hpp"
+#include <../Framework/Window.hpp>
+#include <../Framework/Components/Components.hpp>
 
+#include "res/fonts.hpp"
 #include "Views/app.hpp"
 
 #include <iostream>

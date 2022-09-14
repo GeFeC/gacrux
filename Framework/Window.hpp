@@ -14,6 +14,7 @@
 namespace gx{
 
 GLFWwindow* window;
+Vec2 window_size;
 
 namespace literals{
   auto operator""_dt(unsigned long long value){
@@ -26,6 +27,8 @@ namespace literals{
 }
 
 auto update_frame_buffer(const Vec2& size){
+  gx::window_size = size;
+
   renderer::shader_program::set_uniform(
     "projection",
     glm::ortho(0.f, size.x, size.y, 0.f)
@@ -45,7 +48,8 @@ auto make_app(const std::string& title, const Vec2& initial_size, View<Controlle
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
   glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
 
-  window = glfwCreateWindow(initial_size.x, initial_size.y, title.c_str(), nullptr, nullptr);
+  gx::window_size = initial_size;
+  window = glfwCreateWindow(gx::window_size.x, gx::window_size.y, title.c_str(), nullptr, nullptr);
 
   glfwSetFramebufferSizeCallback(window, [](GLFWwindow*, int width, int height){
     gx::update_frame_buffer({ width + 0.f, height + 0.f });
@@ -60,7 +64,7 @@ auto make_app(const std::string& title, const Vec2& initial_size, View<Controlle
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);  
 
   renderer::init();
-  update_frame_buffer({ initial_size.x, initial_size.y });
+  update_frame_buffer({ gx::window_size.x, gx::window_size.y });
 
   glfwShowWindow(window);
 
