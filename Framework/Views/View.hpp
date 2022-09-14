@@ -16,8 +16,6 @@ namespace gx{
     virtual auto operator()(GLFWwindow* window) const -> void = 0;
   };
 
-  
-
   template<typename Controller, typename Function>
   struct View : ViewBase{
     Function render;

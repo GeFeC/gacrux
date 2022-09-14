@@ -9,6 +9,7 @@ namespace shaders{
     uniform sampler2D pixel_map;
     uniform vec4 f_color;
     uniform int is_glyph = 0;
+    uniform int is_texture = 0;
 
     uniform vec4 border_color;
     uniform int border_thickness = 0;
@@ -18,8 +19,9 @@ namespace shaders{
     void main(){
       float alpha = texture(pixel_map, f_texture_position).r;
 
-      color = f_color * (1 - is_glyph)
-        + f_color * is_glyph * vec4(1.0, 1.0, 1.0, alpha);
+      color = f_color * (1 - is_glyph) * (1 - is_texture)
+        + f_color * is_glyph * vec4(1.0, 1.0, 1.0, alpha)
+        + f_color * is_texture * texture(pixel_map, f_texture_position);
     }
   )";
 };

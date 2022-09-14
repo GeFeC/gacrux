@@ -10,6 +10,7 @@ file(GLOB_RECURSE sources
   Framework/*.hpp
   Framework/*.cpp
   vendor/glad.c
+  vendor/stb.cpp
 )
 
 add_executable(${PROJECT_NAME} ${sources})

@@ -120,6 +120,19 @@ namespace gx::prop{
       item.label = label;
     }
   };
+
+
+  struct Img{
+    Texture* texture;
+
+    Img() = default;
+    Img(Texture& texture) : texture(&texture) {}
+
+    template<typename T>
+    auto set_to(T& item) const{
+      item.texture = texture;
+    }
+  };
 }
 
 namespace gx{

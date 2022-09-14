@@ -15,7 +15,6 @@ private:
 
   std::string source_path;
 
-  auto generate_() noexcept -> void;
   auto read_from_source_path_and_load_() const -> void;
 
 public:

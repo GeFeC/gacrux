@@ -15,9 +15,7 @@ auto app_res = gx::Resources(
   gx::FontList{
     std::make_pair(&gx::fonts::consolas, 70)
   },
-  gx::TextureList{
-    &gx::textures::bricks
-  }
+  gx::TextureList{}
 );
 
 auto app = gx::make_view<AppController>([]{
