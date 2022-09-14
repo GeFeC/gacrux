@@ -6,27 +6,27 @@ namespace gx{
     ComponentStyle(){}
   };
 
-  template<typename Function, typename... Props>
+  template<typename Function>
   struct CustomComponent{
     Function render;
 
     CustomComponent(const Function& render) : render(render) {}
 
-    template<typename... Targs>
-    auto operator()(const Targs&... args) const{
+    template<typename... Props>
+    auto operator()(const Props&... args) const{
       ComponentStyle<Props...> style;
       set_props(style, args...);
       render(style);
     }
 
     auto operator()() const{
-      ComponentStyle<Props...> style;
+      ComponentStyle<> style;
       render(style);
     }
   };
 
-  template<typename... Props, typename Function>
+  template<typename Function>
   auto make_component(const Function& render_function){
-    return CustomComponent<Function, Props...>(render_function);
+    return CustomComponent<Function>(render_function);
   }
 }

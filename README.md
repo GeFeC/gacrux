@@ -79,9 +79,12 @@ As You can see, we're using `rotatable` instead of `component` here. Rotating an
 #include <../Framework/Components/Props.hpp>
 #include <../Framework/Views/View.hpp>
 
-auto app_fonts = gx::FontList{
-  std::make_pair(&gx::fonts::consolas, 70)
-};
+auto app_res = gx::Resources(
+  gx::FontList{
+    std::make_pair(&gx::fonts::consolas, 70)
+  },
+  gx::TextureList{}
+);
 
 auto app = gx::make_view([]{
   gx::text(
@@ -89,7 +92,7 @@ auto app = gx::make_view([]{
     gx::FontFamily(gx::fonts::consolas),
     gx::Position(190, 250)
   );
-}, app_fonts); //NOTE: app_fonts added here!
+}, app_res); //NOTE: app_res added here!
 ```
 `text` must have some font, and we have to specify it. But to use a font, first it must be allocated (loaded). We can create an array of fonts and their corresponding sizes, and provide it to our 'app' View, so the View will manage fonts' allocation and deallocation for us.
 
@@ -104,7 +107,7 @@ auto app = gx::make_view([]{
 
 #include "res/fonts.hpp"
 
-const auto label = gx::make_component<gx::Label, gx::Position, gx::Size>([](const auto& props){
+const auto button = gx::make_component([](const auto& props){
   const auto& [x, y] = props.position;
   const auto& [w, h] = props.size;
 
@@ -138,16 +141,19 @@ const auto label = gx::make_component<gx::Label, gx::Position, gx::Size>([](cons
 
 #include <../Framework/Views/View.hpp>
 
-auto app_fonts = gx::FontList{
-  std::make_pair(&gx::fonts::consolas, 70)
-};
+auto app_res = gx::Resources(
+  gx::FontList{
+    std::make_pair(&gx::fonts::consolas, 70)
+  },
+  gx::TextureList{}
+);
 
 auto app = gx::make_view([]{
   button(
     gx::Label("Hello World!"),
     gx::Position(190, 250)
   );
-}, app_fonts); //NOTE: app_fonts added here!
+}, app_res);
 ```
 ## License
 Gacrux framework is MIT licensed

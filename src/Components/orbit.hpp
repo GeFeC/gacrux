@@ -2,7 +2,7 @@
 
 #include "Models/app.hpp"
 
-const auto orbit = gx::make_component<gx::Rotation>([](const auto& props){
+const auto orbit = gx::make_component([](const auto& props){
   for (int i = 0; i < 5; ++i){
     gx::transformable(
       gx::Model(
