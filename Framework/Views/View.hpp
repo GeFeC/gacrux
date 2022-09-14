@@ -4,6 +4,7 @@
 
 #include "../Framework/aliases.hpp"
 #include "../Framework/Font.hpp"
+#include "Resources.hpp"
 
 #include <GLFW/glfw3.h>
 
@@ -15,18 +16,21 @@ namespace gx{
     virtual auto operator()(GLFWwindow* window) const -> void = 0;
   };
 
-  using FontList = std::vector<std::pair<Font*, i32>>;
+  
 
   template<typename Controller, typename Function>
   struct View : ViewBase{
     Function render;
-    FontList fonts;
+    Resources resources;
 
-    View(Function render, FontList fonts = FontList()) : render(render), fonts(fonts) {}
+    View(Function render, Resources resources = Resources()) : render(render), resources(resources) {}
 
     auto operator()(GLFWwindow* window) const -> void override{
-      for (auto& [font, size] : fonts){
+      for (auto [font, size] : resources.fonts){
         font->allocate(size);
+      }
+      for (auto texture : resources.textures){
+        texture->allocate();
       }
 
       Controller::setup();
@@ -45,8 +49,11 @@ namespace gx{
         delta_time = glfwGetTime() - start_time;
       }
 
-      for (auto& [font, size] : fonts){
+      for (auto& [font, size] : resources.fonts){
         font->free();
+      }
+      for (auto texture : resources.textures){
+        texture->free();
       }
     }
   };
@@ -57,7 +64,7 @@ namespace gx{
   };
 
   template<typename Controller = DummyController, typename Function>
-  auto make_view(Function render, FontList fonts = FontList()){
-    return View<Controller, Function>(render, fonts);
+  auto make_view(Function render, Resources resources = Resources()){
+    return View<Controller, Function>(render, resources);
   }
 }

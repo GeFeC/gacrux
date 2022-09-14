@@ -2,13 +2,15 @@
 
 #include "Util/Exception.hpp"
 
+#include "config.hpp"
+
 #include <fstream>
 #include <vector>
 
 using gx::Texture;
 
 Texture::Texture(const std::string& path) noexcept{
-  this->source_path = path;
+  this->source_path = gx::config::TexturesSrcPath + path;
 }
 
 auto Texture::allocate() -> void{

@@ -1,6 +1,8 @@
 #pragma once
-#include "../../aliases.hpp"
-#include "../../Util/Math.hpp"
+#include "../Framework/aliases.hpp"
+#include "../Framework/Util/Math.hpp"
+
+#include "../Framework/Texture.hpp"
 
 #include <glm/glm.hpp>
 
@@ -21,5 +23,17 @@ struct Transformable{
   gx::Mat4 model;
   glm::vec4 color = { 1.f, 1.f, 1.f, 1.f };
 };
+
+struct TexturedComponent : Component{
+  Texture* texture;
+};  
+
+struct RotatableTexture : Rotatable{
+  Texture* texture;
+}; 
+
+struct TransformableTexture : Transformable{
+  Texture* texture;
+}; 
 
 }

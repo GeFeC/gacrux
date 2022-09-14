@@ -9,9 +9,16 @@
 #include "Models/app.hpp"
 #include "Controllers/app.hpp"
 
-auto app_fonts = gx::FontList{
-  std::make_pair(&gx::fonts::consolas, 70)
-};
+#include "res/textures.hpp"
+
+auto app_res = gx::Resources(
+  gx::FontList{
+    std::make_pair(&gx::fonts::consolas, 70)
+  },
+  gx::TextureList{
+    &gx::textures::bricks
+  }
+);
 
 auto app = gx::make_view<AppController>([]{
   gx::component(gx::Size(800, 600), gx::Color(0.1, 0.05, 0, 1));
@@ -27,4 +34,4 @@ auto app = gx::make_view<AppController>([]{
     gx::FontFamily(gx::fonts::consolas),
     gx::Position(280, 470)
   );
-}, app_fonts);
+}, app_res);
