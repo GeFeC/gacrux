@@ -11,65 +11,26 @@
 
 #include <string>
 
-namespace gx{
+namespace gx::window{
 
-GLFWwindow* window;
-Vec2 window_size;
+inline GLFWwindow* gl_window;
+inline Vec2 size;
 
-namespace literals{
-  auto operator""_dt(unsigned long long value){
-    return value * delta_time;
-  }
+auto update_frame_buffer_(const gx::Vec2& size) -> void;
 
-  auto operator""_dt(long double value){
-    return value * delta_time;
-  }
-}
+auto init_gl() -> void;
+auto set_title(const std::string& title) -> void;
+auto set_size(const Vec2& size) -> void;
 
-auto update_frame_buffer(const Vec2& size){
-  gx::window_size = size;
-
-  renderer::shader_program::set_uniform(
-    "projection",
-    glm::ortho(0.f, size.x, size.y, 0.f)
-  );
-
-  glViewport(0, 0, size.x, size.y);
-}
-
-template<typename Controller, typename Function>
-auto make_app(const std::string& title, const Vec2& initial_size, View<Controller, Function>& initial_view){
-  if (!glfwInit()){
-    throw "GLFW error!\n";
-  }
-
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-  glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
-
-  gx::window_size = initial_size;
-  window = glfwCreateWindow(gx::window_size.x, gx::window_size.y, title.c_str(), nullptr, nullptr);
-
-  glfwSetFramebufferSizeCallback(window, [](GLFWwindow*, int width, int height){
-    gx::update_frame_buffer({ width + 0.f, height + 0.f });
-  });
-  
-  glfwMakeContextCurrent(window);
-  if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
-    throw "GLAD error!\n";
-  }
-
-  glEnable(GL_BLEND);
-  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);  
-
+template<typename Controller, typename ViewFunction>
+auto render(View<Controller, ViewFunction>& initial_view){
   renderer::init();
-  update_frame_buffer({ gx::window_size.x, gx::window_size.y });
+  update_frame_buffer_(window::size);
 
-  glfwShowWindow(window);
+  glfwShowWindow(gl_window);
 
   gx::view_manager::current_view = &initial_view;
-  gx::view_manager::run(window);
+  gx::view_manager::run(gl_window);
 
   glfwTerminate();
 }

@@ -15,10 +15,10 @@ auto app_res = gx::Resources(
 );
 
 auto app = gx::make_view<AppController>([]{
-  gx::component(gx::Size(gx::window_size.x, gx::window_size.y), gx::Color(0.1, 0.05, 0, 1));
+  gx::component(gx::Size(gx::window::size.x, gx::window::size.y), gx::Color(0.1, 0.05, 0, 1));
 
   title(
     gx::Size(800, 600), 
-    gx::Center(gx::Vec2(0, 0), gx::window_size)
+    gx::Center(gx::Vec2(0, 0), gx::window::size)
   );
 }, app_res);

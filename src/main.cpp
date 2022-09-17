@@ -8,7 +8,10 @@
 
 auto main() -> int{
   try{
-    gx::make_app("First Gacrux App", gx::Vec2(800, 600), app);
+    gx::window::init_gl();
+    gx::window::set_title("My Gacrux App");
+    gx::window::set_size(gx::Vec2(800, 600));
+    gx::window::render(app);
   }catch(gx::Exception& e){
     std::cerr << e.what();
   }

@@ -14,6 +14,6 @@ const auto title = gx::make_component([](const auto& props){
     gx::FontFamily(gx::fonts::consolas),
     gx::Label("Gacrux"), 
     gx::Color(1, 0.5, 0, 1), 
-    gx::Center(gx::Vec2(0, 190), gx::window_size)
+    gx::Center(gx::Vec2(0, 190), gx::window::size)
   );
 });
