@@ -1,6 +1,7 @@
 #pragma once
 
-#include "./orbit.hpp"
+#include "res/fonts.hpp"
+#include "orbit.hpp"
 
 const auto title = gx::make_component([](const auto& props){
   for (int i = 0; i < 360; i += 120){

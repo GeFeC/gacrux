@@ -44,7 +44,10 @@ public:
   );
   GACRUX_MAKE_MEMBER_PROXY(SizeProxy, Text, Vec2, 
     ,
-    return owner->get_size();
+    return Vec2(
+      owner->get_size().x,
+      owner->get_total_height()
+    );
   );
   GACRUX_MAKE_MEMBER_PROXY(ColorProxy, Text, glm::vec4, 
     owner->set_color(value);,

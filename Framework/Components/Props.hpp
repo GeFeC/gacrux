@@ -8,6 +8,7 @@
 
 #define GACRUX_MAKE_PROP_HELPER(CLASS, TYPE, NAME, CONSTEXPR, EXTRA) struct CLASS{ \
   TYPE NAME{}; \
+  EXTRA\
   template<typename T> \
   auto set_to(T& component) const{ \
     component.NAME = NAME; \
@@ -35,7 +36,7 @@ namespace gx::prop{
   GACRUX_MAKE_PROP(Img, Texture*, texture);
   GACRUX_MAKE_PROP_NON_CONST(Label, std::string, label);
 
-  //Custom props:
+  //Complex props:
   struct Center{
     Vec2 position;
     Vec2 parent_pos, parent_size;
@@ -52,4 +53,15 @@ namespace gx::prop{
 
 namespace gx{
   using namespace prop;
+}
+
+namespace gx::colors{
+  inline constexpr Color Red = Color(1, 0, 0, 1);
+  inline constexpr Color Green = Color(0, 1, 0, 1);
+  inline constexpr Color Blue = Color(0, 0, 1, 1);
+  inline constexpr Color Yellow = Color(1, 1, 0, 1);
+  inline constexpr Color Aqua = Color(0, 1, 1, 1);
+  inline constexpr Color Magenta = Color(1, 0, 1, 1);
+  inline constexpr Color Black = Color(0, 0, 0, 1);
+  inline constexpr Color White = Color(1, 1, 1, 1);
 }

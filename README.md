@@ -34,8 +34,9 @@ And You're done! Your project should be built!
 ### **Simple square**:
 `Views/app.hpp:`
 ```cpp
-#include <../Framework/Components/Components.hpp>
-#include <../Framework/Components/Props.hpp>
+#pragma once
+
+#include <../Framework/Components/Render.hpp>
 #include <../Framework/Views/View.hpp>
 
 auto app = gx::make_view([]{
@@ -53,8 +54,7 @@ Components are put inside Views. When You download the framework, the default pr
 ```cpp
 #pragma once
 
-#include <../Framework/Components/Components.hpp>
-#include <../Framework/Components/Props.hpp>
+#include <../Framework/Components/Render.hpp>
 #include <../Framework/Views/View.hpp>
 
 auto app = gx::make_view([]{
@@ -75,8 +75,7 @@ As You can see, we're using `rotatable` instead of `component` here. Rotating an
 
 #include "res/fonts.hpp"
 
-#include <../Framework/Components/Components.hpp>
-#include <../Framework/Components/Props.hpp>
+#include <../Framework/Components/Render.hpp>
 #include <../Framework/Views/View.hpp>
 
 auto app_res = gx::Resources(
@@ -88,9 +87,9 @@ auto app_res = gx::Resources(
 
 auto app = gx::make_view([]{
   gx::text(
-    "Hello World!",
-    gx::FontFamily(gx::fonts::consolas),
-    gx::Position(190, 250)
+    gx::FontFamily(&gx::fonts::consolas), //Must be before label!
+    gx::Label("Hello World!"),
+    gx::Center(gx::Vec2(0), gx::window::size)
   );
 }, app_res); //NOTE: app_res added here!
 ```
@@ -101,8 +100,7 @@ auto app = gx::make_view([]{
 ```cpp
 #pragma once
 
-#include <../Framework/Components/Components.hpp>
-#include <../Framework/Components/Props.hpp>
+#include <../Framework/Components/Render.hpp>
 #include <../Framework/Components/CustomComponents.hpp>
 
 #include "res/fonts.hpp"
@@ -126,8 +124,9 @@ const auto button = gx::make_component([](const auto& props){
   );
 
   gx::text(
-    props.label,
-    gx::Position(props.position.x, props.position.y),
+    gx::FontFamily(&gx::fonts::consolas),
+    gx::Label(props.label),
+    gx::Center(gx::Vec2(x, y), gx::Vec2(w, h)),
     gx::Color(1, 1, 1, 1) //white
   );
 });
@@ -137,21 +136,20 @@ const auto button = gx::make_component([](const auto& props){
 #pragma once
 
 #include "Components/button.hpp"
-#include "res/fonts.hpp"
-
 #include <../Framework/Views/View.hpp>
 
 auto app_res = gx::Resources(
   gx::FontList{
-    std::make_pair(&gx::fonts::consolas, 70)
+    std::make_pair(&gx::fonts::consolas, 40)
   },
   gx::TextureList{}
 );
 
 auto app = gx::make_view([]{
   button(
-    gx::Label("Hello World!"),
-    gx::Position(190, 250)
+    gx::Label("Click me!"),
+    gx::Size(230, 70),
+    gx::Center(gx::Vec2(0), gx::window::size)
   );
 }, app_res);
 ```
