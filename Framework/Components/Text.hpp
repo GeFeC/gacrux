@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../Framework/Renderer/Drawable/Component.hpp"
 #include "../Framework/Font.hpp"
-
 #include "../Framework/aliases.hpp"
+#include "./Components.hpp"
+#include "../Framework/Util/Util.hpp"
 
 #include <glm/glm.hpp>
 
@@ -14,14 +14,17 @@
 
 namespace gx{
 
-class Text :public gx::Component{
+class Text{
 private:
-  struct Glyph :public gx::Component{
-    gx::Vec2 bearing;
+  struct Glyph :public Component{
+    Vec2 bearing;
     i32 advance;
   };
 
-  Font* font;
+  Vec2 position_;
+  Vec2 size_;
+  glm::vec4 color_;
+  Font* font_;
 
   std::vector<Glyph> glyphs{};
   std::string text{};
@@ -35,6 +38,33 @@ private:
   auto setup_text_height_() -> void;
 
 public:
+  GACRUX_MAKE_MEMBER_PROXY(PositionProxy, Text, Vec2, 
+    owner->set_position(value);,
+    return owner->get_position();
+  );
+  GACRUX_MAKE_MEMBER_PROXY(SizeProxy, Text, Vec2, 
+    ,
+    return owner->get_size();
+  );
+  GACRUX_MAKE_MEMBER_PROXY(ColorProxy, Text, glm::vec4, 
+    owner->set_color(value);,
+    return owner->get_color();
+  );
+  GACRUX_MAKE_MEMBER_PROXY(LabelProxy, Text, std::string, 
+    owner->set_text(value);,
+    return owner->get_text();
+  );
+  GACRUX_MAKE_MEMBER_PROXY(FontProxy, Text, Font*, 
+    owner->set_font(value);,
+    return owner->get_font();
+  );
+  
+  PositionProxy position;
+  SizeProxy size;
+  ColorProxy color;
+  LabelProxy label;
+  FontProxy font;
+
   Text();
 
   auto set_position(const Vec2& position) -> void;

@@ -74,14 +74,15 @@ auto renderer::draw(const gx::Transformable& transformable) noexcept -> void{
   glDrawArrays(GL_TRIANGLES, 0, 6);
 }
 
-auto renderer::draw(const gx::TexturedComponent& component) noexcept -> void{
-  namespace program = renderer::shader_program;
-  program::set_uniform("is_texture", 1);
-  component.texture->bind();
-  renderer::draw(static_cast<gx::Component>(component));
+//TODO
+// auto renderer::draw(const gx::TexturedComponent& component) noexcept -> void{
+//   namespace program = renderer::shader_program;
+//   program::set_uniform("is_texture", 1);
+//   component.texture->bind();
+//   renderer::draw(static_cast<gx::Component>(component));
 
-  program::set_uniform("is_texture", 0);
-}
+//   program::set_uniform("is_texture", 0);
+// }
 
 auto renderer::draw(const Text& text) -> void{
   namespace program = renderer::shader_program;

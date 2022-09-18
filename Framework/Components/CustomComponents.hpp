@@ -4,6 +4,9 @@ namespace gx{
   template<typename... Props>
   struct ComponentStyle : Props...{
     ComponentStyle(){}
+
+    template<typename... ExtraProps>
+    using with = ComponentStyle<Props..., ExtraProps...>;
   };
 
   template<typename Function>

@@ -23,6 +23,13 @@ namespace gx{
     auto operator-=(const Vec2& other) -> Vec2&;
 
     auto operator-() const -> Vec2;
+
+    constexpr auto operator*(f32 value) const{
+      return Vec2(x * value, y * value);
+    }
+    constexpr auto operator/(f32 value) const{
+      return Vec2(x / value, y / value);
+    }
   };
 
   struct Mat4{

@@ -14,29 +14,29 @@
 #include <algorithm>
 
 namespace gx{
-  inline auto rng = std::mt19937{ static_cast<std::mt19937::result_type>(std::time(0)) };
-
   inline auto get_file_content(const std::string& filePath) -> std::string;
 
-  template<typename T, typename std::enable_if_t<std::is_integral_v<T>>>
-  inline auto from_string(const std::string& string) noexcept -> T{
-    try{
-      return static_cast<T>(std::stol(string));
-    }
-    catch(const std::invalid_argument&){
-      return 0;
-    }
-  }
+  inline auto rng = std::mt19937{ static_cast<std::mt19937::result_type>(std::time(0)) };
 
   template<typename T>
-  inline auto get_random_value(T min, T max) noexcept{
+  inline auto get_random_value(T min, T max){
     auto engine = std::uniform_int_distribution<T>{ min, max };
     return engine(rng);
   }
+}
 
-  struct Direction{
-    i32 horizontal, vertical;
-  };
+#define GACRUX_MAKE_MEMBER_PROXY(NAME, CLASS, TYPE, SETTER, GETTER) struct NAME{ \
+  CLASS* owner; \
+  NAME() = default; \
+  auto assign_owner(CLASS* owner){ \
+    this->owner = owner; \
+  } \
+  auto operator=(TYPE const& value){ \
+    SETTER \
+  } \
+  operator TYPE(){ \
+    GETTER \
+  } \
 }
 
 #ifdef NDEBUG

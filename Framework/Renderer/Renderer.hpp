@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Drawable/Component.hpp"
-#include "Drawable/Text.hpp"
+#include "../Framework/Components/Components.hpp"
+#include "../Framework/Components/Text.hpp"
 
 namespace gx::renderer{
   inline GLuint shader_program_id;

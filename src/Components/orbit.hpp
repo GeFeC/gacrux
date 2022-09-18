@@ -1,8 +1,6 @@
 #pragma once
 
-#include <../Framework/Components/Props.hpp>
-#include <../Framework/Components/Components.hpp>
-#include <../Framework/Components/CustomComponents.hpp>
+#include <../Framework/Components/Render.hpp>
 #include <../Framework/Views/View.hpp>
 
 #include "Models/app.hpp"

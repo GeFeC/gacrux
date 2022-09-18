@@ -2,160 +2,50 @@
 
 #include "../Framework/aliases.hpp"
 #include "../Framework/Util/Math.hpp"
-#include "../Framework/Renderer/Drawable/Text.hpp"
 #include "../Framework/Font.hpp"
 
 #include <glm/glm.hpp>
 
-#define GACRUX_CREATE_PROP(NAME, PROP_TYPE, PROP_NAME) struct NAME{ \
-  PROP_TYPE PROP_NAME; \
-  NAME() = default; \
-  NAME(PROP_TYPE PROP_NAME) : PROP_NAME(PROP_NAME) {} \
+#define GACRUX_MAKE_PROP_HELPER(CLASS, TYPE, NAME, CONSTEXPR, EXTRA) struct CLASS{ \
+  TYPE NAME{}; \
   template<typename T> \
-  auto set_to(T& item) const{ \
-    item.PROP_NAME = PROP_NAME; \
-  } \
-};
+  auto set_to(T& component) const{ \
+    component.NAME = NAME; \
+  }\
+  CONSTEXPR CLASS() = default; \
+  CONSTEXPR CLASS(TYPE&& NAME) : NAME(std::forward<TYPE>(NAME)) {} \
+  template<typename... Ts> \
+  CONSTEXPR CLASS(Ts&&... args) : NAME(std::forward<Ts>(args)...) {} \
+}
+
+#define GACRUX_MAKE_PROP(CLASS, TYPE, NAME) GACRUX_MAKE_PROP_HELPER(CLASS, TYPE, NAME, constexpr,)
+#define GACRUX_MAKE_PROP_NON_CONST(CLASS, TYPE, NAME) GACRUX_MAKE_PROP_HELPER(CLASS, TYPE, NAME,,)
+
+#define GACRUX_MAKE_COMPLEX_PROP(CLASS, TYPE, NAME, EXTRA) GACRUX_MAKE_PROP_HELPER(CLASS, TYPE, NAME, constexpr, EXTRA)
+#define GACRUX_MAKE_COMPLEX_PROP_NON_CONST(CLASS, TYPE, NAME, EXTRA) GACRUX_MAKE_PROP_HELPER(CLASS, TYPE, NAME,, EXTRA)
 
 namespace gx::prop{
-  struct Position{ 
-    gx::Vec2 position;
+  GACRUX_MAKE_PROP(Position, Vec2, position);
+  GACRUX_MAKE_PROP(Size, Vec2, size);
+  GACRUX_MAKE_PROP(Color, glm::vec4, color);
+  GACRUX_MAKE_PROP(Rotation, f32, rotation);
+  GACRUX_MAKE_PROP(RotationOffset, Vec2, rotation_offset);
+  GACRUX_MAKE_PROP(Model, Mat4, model);
+  GACRUX_MAKE_PROP(FontFamily, Font*, font);
+  GACRUX_MAKE_PROP(Img, Texture*, texture);
+  GACRUX_MAKE_PROP_NON_CONST(Label, std::string, label);
 
-    Position() = default;
-    Position(gx::f32 x, gx::f32 y) : position{ x, y } {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.position = position;
-    }
-
-    auto set_to(Text& text) const{
-      text.set_position(position);
-    }
-  };
-
+  //Custom props:
   struct Center{
-    gx::Vec2 position;
-    gx::Vec2 parent_pos, parent_size;
+    Vec2 position;
+    Vec2 parent_pos, parent_size;
 
-    Center() = default;
-    Center(gx::Vec2 parent_pos, gx::Vec2 parent_size) : parent_pos(parent_pos), parent_size(parent_size) {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.position = parent_pos 
-      + Vec2(parent_size.x / 2, parent_size.y / 2)
-      - Vec2(item.size.x / 2, item.size.y / 2);
-    }
-
-    auto set_to(Text& text) const{
-      text.set_position(parent_pos 
-      + Vec2(parent_size.x / 2, parent_size.y / 2)
-      - Vec2(text.get_size().x / 2, text.get_size().y / 2));
-    }
-  };
-
-  struct Size{ 
-    gx::Vec2 size;
-
-    Size() = default;
-    Size(gx::f32 x, gx::f32 y) : size{ x, y } {}
+    constexpr Center() = default;
+    constexpr Center(const Vec2& parent_pos, const Vec2& parent_size) : parent_pos(parent_pos), parent_size(parent_size) {}
 
     template<typename T>
-    auto set_to(T& item) const{
-      item.size = size;
-    }
-  };
-
-  struct Color{ 
-    glm::vec4 color{};
-
-    Color() = default;
-    Color(gx::f32 r, gx::f32 g, gx::f32 b, gx::f32 a) : color{ r, g, b, a } {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.color = color;
-    }
-
-    auto set_to(Text& text) const{
-      text.set_color(color);
-    }
-  };
-
-  struct Rotation{ 
-    gx::f32 rotation;
-    Rotation() = default;
-    Rotation(gx::f32 angle) : rotation{ angle } {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.rotation = rotation;
-    }
-  };
-
-  struct RotationOffset{ 
-    gx::Vec2 rotation_offset;
-
-    RotationOffset() = default;
-    RotationOffset(gx::f32 x, gx::f32 y) : rotation_offset{ x, y } {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.rotation_offset = rotation_offset;
-    }
-  };
-
-  struct Model{
-    gx::Mat4 model;
-
-    Model() = default;
-    Model(const gx::Mat4& model) : model(model) {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.model = model;
-    }
-  };
-
-  struct FontFamily{
-    Font* font;
-
-    FontFamily() = default;
-    FontFamily(Font& font) : font(&font) {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.set_font(font);
-    }
-  };
-
-  struct Label{
-    std::string label;
-
-    Label() = default;
-    Label(const std::string& label) : label(label) {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.label = label;
-    }
-
-    auto set_to(Text& text) const{
-      text.set_text(label);
-    }
-  };
-
-
-  struct Img{
-    Texture* texture;
-
-    Img() = default;
-    Img(Texture& texture) : texture(&texture) {}
-
-    template<typename T>
-    auto set_to(T& item) const{
-      item.texture = texture;
+    constexpr auto set_to(T& component) const{
+      component.position = parent_pos + parent_size / 2 - Vec2(component.size) / 2;
     }
   };
 }
