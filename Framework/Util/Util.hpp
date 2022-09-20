@@ -14,6 +14,8 @@
 #include <algorithm>
 
 namespace gx{
+  inline i32 i = 0;
+
   inline auto get_file_content(const std::string& filePath) -> std::string;
 
   inline auto rng = std::mt19937{ static_cast<std::mt19937::result_type>(std::time(0)) };
@@ -22,6 +24,15 @@ namespace gx{
   inline auto get_random_value(T min, T max){
     auto engine = std::uniform_int_distribution<T>{ min, max };
     return engine(rng);
+  }
+
+  template<typename Fun>
+  inline auto loop(i32 count, const Fun& fun){
+    gx::i = 0;
+    for (i32 i = 0; i < count; ++i){
+      fun();
+      ++gx::i;
+    }
   }
 }
 

@@ -1,8 +1,6 @@
 #include <../Framework/Window.hpp>
 #include <../Framework/Components/Render.hpp>
 
-#include <iostream>
-
 #include "Views/app.hpp"
 
 auto main() -> int{

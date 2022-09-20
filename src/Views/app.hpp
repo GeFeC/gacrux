@@ -21,9 +21,9 @@ auto app = gx::make_view<AppController>([]{
     gx::Size(gx::window::size),
     gx::Color(0.1, 0.05, 0, 1)
   );
-
+  
   title(
-    gx::Size(800, 600), 
-    gx::Center(gx::Vec2(0, 0), gx::window::size)
+    gx::Size(800, 600),
+    gx::Center(gx::Vec2(0), gx::window::size)
   );
 }, app_res);

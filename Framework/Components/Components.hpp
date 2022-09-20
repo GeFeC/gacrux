@@ -22,6 +22,6 @@ constexpr auto set_props(ComponentType& component, const P& p, const Props&... p
 using Component = ComponentStyle<Position, Size, Color>;
 using Rotatable = Component::with<Rotation, RotationOffset>;
 using Transformable = ComponentStyle<Model, Color>;
-using TexturedComponent = Component::with<Img>;
+using TexturedComponent = Component::with<Img, TexMinFilter, TexMagFilter>;
 
 } //namespace gx
