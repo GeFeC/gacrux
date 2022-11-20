@@ -21,10 +21,10 @@ private:
     i32 advance;
   };
 
-  Vec2 position_;
-  Vec2 size_;
-  glm::vec4 color_;
-  Font* font_;
+  Vec2 position;
+  Vec2 size;
+  glm::vec4 color;
+  Font* font;
 
   std::vector<Glyph> glyphs{};
   std::string text{};
@@ -38,36 +38,6 @@ private:
   auto setup_text_height_() -> void;
 
 public:
-  GACRUX_MAKE_MEMBER_PROXY(PositionProxy, Text, Vec2, 
-    owner->set_position(value);,
-    return owner->get_position();
-  );
-  GACRUX_MAKE_MEMBER_PROXY(SizeProxy, Text, Vec2, 
-    ,
-    return Vec2(
-      owner->get_size().x,
-      owner->get_total_height()
-    );
-  );
-  GACRUX_MAKE_MEMBER_PROXY(ColorProxy, Text, glm::vec4, 
-    owner->set_color(value);,
-    return owner->get_color();
-  );
-  GACRUX_MAKE_MEMBER_PROXY(LabelProxy, Text, std::string, 
-    owner->set_text(value);,
-    return owner->get_text();
-  );
-  GACRUX_MAKE_MEMBER_PROXY(FontProxy, Text, Font*, 
-    owner->set_font(value);,
-    return owner->get_font();
-  );
-  
-  PositionProxy position;
-  SizeProxy size;
-  ColorProxy color;
-  LabelProxy label;
-  FontProxy font;
-
   Text();
 
   auto set_position(const Vec2& position) -> void;
@@ -94,6 +64,14 @@ public:
   auto get_total_height() const -> f32;
 
   auto get_line_number_at(i32 index) const -> i32;
+
+  static auto get_component_size(const std::string& label, Font* font = Font::current){
+    auto component = Text{};
+    component.set_font(font);
+    component.set_text(label);
+
+    return component.get_size();
+  }
 };
 
 }//namespace gx

@@ -3,7 +3,6 @@
 #include "Util/Math.hpp"
 #include "Renderer/Renderer.hpp"
 #include "Renderer/ShaderProgram.hpp"
-#include "Views/ViewManager.hpp"
 
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
@@ -22,15 +21,16 @@ auto init_gl() -> void;
 auto set_title(const std::string& title) -> void;
 auto set_size(const Vec2& size) -> void;
 
-template<typename Controller, typename ViewFunction>
-auto render(View<Controller, ViewFunction>& initial_view){
+template<typename FrameManager>
+auto render(const FrameManager& frame_manager){
   renderer::init();
   update_frame_buffer_(window::size);
 
   glfwShowWindow(gl_window);
 
-  gx::view_manager::current_view = &initial_view;
-  gx::view_manager::run(gl_window);
+  while(!glfwWindowShouldClose(gl_window)){
+    frame_manager();
+  }
 
   glfwTerminate();
 }

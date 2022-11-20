@@ -2,6 +2,7 @@
 
 #define NDEBUG
 
+#include "Math.hpp"
 #include "Exception.hpp"
 #include "../aliases.hpp"
 
@@ -14,6 +15,20 @@
 #include <algorithm>
 
 namespace gx{
+  struct Rect{
+    Vec2 position;
+    Vec2 size;
+  };
+
+  template<typename T>
+  using type_of = std::remove_const_t<std::remove_reference_t<T>>;
+
+  template<typename Target, typename T, typename... Ts>
+  static constexpr auto has_type = std::is_same_v<Target, T> || has_type<Target, Ts...>;
+
+  template<typename Target, typename T>
+  static constexpr auto has_type<Target, T> = std::is_same_v<Target, T>;
+
   inline i32 i = 0;
 
   inline auto get_file_content(const std::string& filePath) -> std::string;
@@ -34,20 +49,6 @@ namespace gx{
       ++gx::i;
     }
   }
-}
-
-#define GACRUX_MAKE_MEMBER_PROXY(NAME, CLASS, TYPE, SETTER, GETTER) struct NAME{ \
-  CLASS* owner; \
-  NAME() = default; \
-  auto assign_owner(CLASS* owner){ \
-    this->owner = owner; \
-  } \
-  auto operator=(TYPE const& value){ \
-    SETTER \
-  } \
-  operator TYPE(){ \
-    GETTER \
-  } \
 }
 
 #ifdef NDEBUG

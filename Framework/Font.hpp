@@ -26,6 +26,8 @@ private:
   auto create_texture_from_face_(const FT_Face& face) noexcept -> GLuint;
 
 public:
+  inline static Font* current;
+
   i32 size{};
 
   std::vector<Glyph> glyphs;

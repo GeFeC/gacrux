@@ -1,20 +1,26 @@
 #pragma once
 
+#include "../Framework/Window.hpp"
 #include "res/fonts.hpp"
 #include "orbit.hpp"
 
-const auto title = gx::make_component([](const auto& props){
-  for (int i = 0; i < 360; i += 120){
-    orbit(
-      gx::Rotation(AppModel::orbit_rotation + i),
-      gx::Position(props.position.x, props.position.y)
+const auto title = [](const auto& props){
+  using namespace gx::render;
+
+  for (int i = 0; i < 3; ++i){
+    orbit++(
+      gx::Rotation{ i * 120.f },
+      gx::Position{ props.position },
+      gx::State(props.state)
     );
   }
 
-  gx::text(
-    gx::FontFamily(&gx::fonts::consolas),
-    gx::Label("Gacrux"), 
-    gx::Color(1, 0.5, 0, 1), 
-    gx::Center(gx::Vec2(0, 190), gx::window::size)
+  const auto label = "Gacrux";
+
+  gx::text++(
+    gx::FontFamily{ &gx::fonts::consolas },
+    gx::Label{{ label }},
+    gx::Color{{ 1, 0.5, 0, 1 }},
+    gx::Center(gx::Text::get_component_size(label), gx::Rect{ { 0, 170 }, gx::window::size })
   );
-});
+};

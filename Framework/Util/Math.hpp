@@ -13,22 +13,46 @@ namespace gx{
     constexpr Vec2(f32 x, f32 y) : x(x), y(y) {}
     constexpr Vec2(f32 value) : Vec2(value, value) {}
 
-    auto operator==(const Vec2& other) const -> bool;
-    auto operator!=(const Vec2& other) const -> bool;
+    constexpr auto operator==(const Vec2& other) const{
+      return x == other.x && y == other.y;
+    }
 
-    auto operator+(const Vec2& other) const -> Vec2;
-    auto operator-(const Vec2& other) const -> Vec2;
+    constexpr auto operator!=(const Vec2& other) const{
+      return !(*this == other);
+    }
 
-    auto operator+=(const Vec2& other) -> Vec2&;
-    auto operator-=(const Vec2& other) -> Vec2&;
+    constexpr auto operator+(const Vec2& other) const{
+      return Vec2(x + other.x, y + other.y);
+    }
 
-    auto operator-() const -> Vec2;
+    constexpr auto operator-(const Vec2& other) const{
+      return Vec2(x - other.x, y - other.y);
+    }
 
-    constexpr auto operator*(f32 value) const{
+    constexpr auto& operator+=(const Vec2& other){
+      x += other.x;
+      y += other.y;
+
+      return *this;
+    }
+
+    constexpr auto& operator-=(const Vec2& other){
+      x -= other.x;
+      y -= other.y;
+
+      return *this;
+    }
+
+    constexpr auto operator*(i32 value) const{
       return Vec2(x * value, y * value);
     }
-    constexpr auto operator/(f32 value) const{
+
+    constexpr auto operator/(i32 value) const{
       return Vec2(x / value, y / value);
+    }
+
+    constexpr auto operator-() const{
+      return Vec2(-x, -y);
     }
   };
 

@@ -1,0 +1,397 @@
+[
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Components/Text.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Components/Text.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Components/Text.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Font.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Font.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Font.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Renderer/Renderer.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/Renderer.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/Renderer.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Renderer/Shader.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/Shader.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/Shader.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Renderer/ShaderProgram.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/ShaderProgram.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/ShaderProgram.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Renderer/Vao.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/Vao.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Renderer/Vao.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Texture.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Texture.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Texture.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Util/Math.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Util/Math.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Util/Math.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Util/Util.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Util/Util.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Util/Util.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Views/ViewManager.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Views/ViewManager.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Views/ViewManager.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/Framework/Window.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/Framework/Window.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/Framework/Window.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/src/main.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/src/main.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/src/main.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/cc  -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -o CMakeFiles/gacrux.dir/vendor/glad.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glad.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glad.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug",
+  "command": "/usr/bin/c++   -I/home/wojtus/Desktop/c++/gacrux-framework/src -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include  -g   -std=gnu++17 -o CMakeFiles/gacrux.dir/vendor/stb.cpp.o -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/stb.cpp",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/stb.cpp"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/context.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/context.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/init.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/init.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/input.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/input.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/monitor.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/monitor.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/platform.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/platform.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/platform.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/vulkan.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/vulkan.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/window.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/window.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/egl_context.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/egl_context.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/osmesa_context.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/null_init.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_init.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_init.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/null_monitor.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_monitor.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_monitor.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/null_window.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_window.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_window.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/null_joystick.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_joystick.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/null_joystick.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_module.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_module.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_module.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_time.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_time.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_time.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_thread.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_thread.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_init.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/x11_init.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/x11_init.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_monitor.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/x11_monitor.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_window.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/x11_window.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/x11_window.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/xkb_unicode.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/xkb_unicode.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/glx_context.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/glx_context.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/glx_context.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/linux_joystick.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/glfw/src  -g -fPIC   -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_poll.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_poll.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/glfw/src/posix_poll.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/autofit/autofit.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/autofit/autofit.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/autofit/autofit.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftbase.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbase.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbase.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftbbox.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbbox.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbbox.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftbdf.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbdf.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbdf.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftbitmap.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbitmap.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftbitmap.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftcid.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftcid.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftcid.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftfstype.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftfstype.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftfstype.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftgasp.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftgasp.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftgasp.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftglyph.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftglyph.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftglyph.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftgxval.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftgxval.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftgxval.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftinit.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftinit.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftinit.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftmm.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftmm.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftmm.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftotval.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftotval.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftotval.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftpatent.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftpatent.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftpatent.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftpfr.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftpfr.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftpfr.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftstroke.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftstroke.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftstroke.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftsynth.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftsynth.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftsynth.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/fttype1.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/fttype1.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/fttype1.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftwinfnt.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftwinfnt.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftwinfnt.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/bdf/bdf.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/bdf/bdf.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/bdf/bdf.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/bzip2/ftbzip2.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/bzip2/ftbzip2.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/cache/ftcache.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/cache/ftcache.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/cache/ftcache.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/cff/cff.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/cff/cff.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/cff/cff.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/cid/type1cid.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/cid/type1cid.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/cid/type1cid.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/gzip/ftgzip.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/gzip/ftgzip.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/gzip/ftgzip.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/lzw/ftlzw.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/lzw/ftlzw.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/lzw/ftlzw.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/pcf/pcf.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/pcf/pcf.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/pcf/pcf.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/pfr/pfr.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/pfr/pfr.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/pfr/pfr.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/psaux/psaux.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/psaux/psaux.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/psaux/psaux.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/pshinter/pshinter.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/pshinter/pshinter.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/pshinter/pshinter.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/psnames/psnames.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/psnames/psnames.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/psnames/psnames.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/raster/raster.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/raster/raster.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/raster/raster.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/sdf/sdf.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/sdf/sdf.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/sdf/sdf.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/sfnt/sfnt.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/sfnt/sfnt.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/sfnt/sfnt.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/smooth/smooth.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/smooth/smooth.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/smooth/smooth.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/svg/svg.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/svg/svg.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/svg/svg.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/truetype/truetype.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/truetype/truetype.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/truetype/truetype.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/type1/type1.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/type1/type1.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/type1/type1.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/type42/type42.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/type42/type42.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/type42/type42.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/winfonts/winfnt.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/winfonts/winfnt.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/winfonts/winfnt.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/builds/unix/ftsystem.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/builds/unix/ftsystem.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/builds/unix/ftsystem.c"
+},
+{
+  "directory": "/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/include -I/home/wojtus/Desktop/c++/gacrux-framework/debug/vendor/freetype/include/freetype/config  -g -fvisibility=hidden   -o CMakeFiles/freetype.dir/src/base/ftdebug.c.o   -c /home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftdebug.c",
+  "file": "/home/wojtus/Desktop/c++/gacrux-framework/vendor/freetype/src/base/ftdebug.c"
+}
+]
