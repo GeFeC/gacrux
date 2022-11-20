@@ -2,6 +2,7 @@
 
 #include "../Framework/aliases.hpp"
 #include "../Framework/Util/Math.hpp"
+#include "../Framework/Util/Util.hpp"
 #include "../Framework/Font.hpp"
 
 #include <glm/glm.hpp>
@@ -61,14 +62,14 @@ constexpr auto Center(const Vec2& target_size, const Rect& parent){
 }
 
 namespace colors{
-  static constexpr auto White = Color{{ 1, 1, 1, 1 }};
-  static constexpr auto Black = Color{{ 0, 0, 0, 1 }};
-  static constexpr auto Red = Color{{ 1, 0, 0, 1 }};
-  static constexpr auto Green = Color{{ 0, 1, 0, 1 }};
-  static constexpr auto Blue = Color{{ 0, 0, 1, 1 }};
-  static constexpr auto Yellow = Color{{ 1, 1, 0, 1 }};
-  static constexpr auto Magenta = Color{{ 1, 0, 1, 1 }};
-  static constexpr auto Aqua = Color{{ 0, 1, 1, 1 }};
+  static constexpr auto White = glm::vec4(1, 1, 1, 1);
+  static constexpr auto Black = glm::vec4(0, 0, 0, 1);
+  static constexpr auto Red = glm::vec4(1, 0, 0, 1);
+  static constexpr auto Green = glm::vec4(0, 1, 0, 1);
+  static constexpr auto Blue = glm::vec4(0, 0, 1, 1);
+  static constexpr auto Yellow = glm::vec4(1, 1, 0, 1);
+  static constexpr auto Magenta = glm::vec4(1, 0, 1, 1);
+  static constexpr auto Aqua = glm::vec4(0, 1, 1, 1);
 }
 
 } //namespace gx::prop

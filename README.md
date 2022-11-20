@@ -45,7 +45,7 @@ auto app = gx::make_frame([]{
   gx::component++(
     gx::Size{{ 100, 100 }},
     gx::Position{{ 350, 250 }},
-    gx::colors::Green
+    gx::Color{ gx::colors::Green }
   );
 });
 ```
@@ -65,7 +65,7 @@ auto app = gx::make_frame([]{
   gx::rotatable++( //NOTE: rotatable instead of component here!
     gx::Size{{ 100, 100 }},
     gx::Position{{ 400, 300 }},
-    gx::colors::Red,
+    gx::Color{ gx::colors::Red },
     gx::Rotation{ 45.f },
     gx::RotationOffset{{ -50.f, -50.f }}
   );
@@ -96,7 +96,7 @@ auto app = gx::make_frame([]{
   gx::text++(
     gx::FontFamily{ &gx::fonts::consolas },
     gx::Label{ "Hello World!" },
-    gx::colors::White
+    gx::Color{ gx::colors::White }
   );
 }, app_res); //NOTE: app_res added here!
 ```
@@ -140,7 +140,7 @@ const auto border = [](const auto& props){
   gx::component++(
     gx::Position{ position + gx::Vec2(BorderSize) },
     gx::Size{ props.size - gx::Vec2(BorderSize * 2) },
-    gx::colors::Black
+    gx::Color{ gx::colors::Black }
   );
 };
 
@@ -149,7 +149,7 @@ const auto app = gx::make_frame([](const auto& state){
 
   border++(
     gx::Size{{ 230, 70 }},
-    BorderColor{ gx::colors::Aqua.color }
+    BorderColor{ gx::colors::Aqua }
   );
 }, app_res);
 ```

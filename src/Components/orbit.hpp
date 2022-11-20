@@ -15,7 +15,7 @@ const auto orbit = [](const auto& props){
       .rotate(props.state.particle_rotation + i * 40)
       .translate(gx::Vec2(60, 0))
       .rotate(-(props.state.particle_rotation + i * 40))
-      .scale(gx::Vec2(15 - i, (15 - i) / 1.6))
+      .scale(gx::Vec2(20 - i, (20 - i) / 1.6))
       .rotate(props.state.particle_rotation + i * 40);
   };
 

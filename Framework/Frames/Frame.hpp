@@ -1,7 +1,6 @@
 #pragma once
 
 #include <vector>
-#include <iostream>
 
 #include "../Framework/aliases.hpp"
 #include "../Framework/Font.hpp"
