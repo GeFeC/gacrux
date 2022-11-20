@@ -1,13 +1,10 @@
 #pragma once
 
 #include <../Framework/Components/Render.hpp>
-#include <../Framework/Util/Iterator.hpp>
-#include <../Framework/Animation.hpp>
 
 #include "States/AppState.hpp"
 #include "Controllers/AppController.hpp"
 
-#include "res/textures.hpp"
 #include "res/fonts.hpp"
 
 #include "Components/title.hpp"

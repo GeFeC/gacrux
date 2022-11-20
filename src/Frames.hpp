@@ -10,6 +10,8 @@ enum class Frame{
 static auto current_frame = Frame::App;
 
 const auto frame_manager = []{
+  gx::Font::current = &gx::fonts::consolas;
+
   if (current_frame == Frame::App){
     app();
   }

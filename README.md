@@ -107,7 +107,7 @@ auto app = gx::make_frame([]{
 ```cpp
 #pragma once
 
-#include "Components/button.hpp"
+#include <../Framework/Component/Render.hpp>
 #include <../Framework/Frames/Frame.hpp>
 
 const auto app_res = gx::Resources(
@@ -122,6 +122,7 @@ struct BorderColor{
   glm::vec4 border_color;
 };
 
+//Custom component
 const auto border = [](const auto& props){
   using namespace gx::render;
 
@@ -148,7 +149,6 @@ const auto app = gx::make_frame([](const auto& state){
 
   border++(
     gx::Size{{ 230, 70 }},
-    gx::Label{ "Click me!" },
     BorderColor{ gx::colors::Aqua.color }
   );
 }, app_res);
